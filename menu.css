@@ -1,0 +1,197 @@
+/**
+ * menu.css
+ * 
+ * 메뉴(마이페이지) 화면의 스타일을 정의합니다.
+ * 프로필 섹션, 메뉴 목록 아이템 및 검색바 스타일을 포함합니다.
+ * 
+ * 연결된 파일:
+ * - js/screens/menu.js
+ */
+/* ================================
+   👤 마이페이지 / 메뉴 화면
+================================ */
+
+.menu-page {
+  min-height: 100vh;
+  padding-bottom: 100px;
+  /* 탭바 공간 */
+  background-color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+/* 상단 제목 */
+.menu-header {
+  padding: 50px 16px 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.menu-header-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* 검색 바 */
+.menu-search {
+  padding: 12px 16px 8px 16px;
+  border-bottom: 8px solid #f5f5f5;
+}
+
+.menu-search-box {
+  position: relative;
+  width: 100%;
+}
+
+.menu-search-input {
+  width: 100%;
+  padding: 10px 40px 10px 12px;
+  border-radius: 24px;
+  border: 1px solid #dddddd;
+  font-size: 14px;
+  background-color: #fafafa;
+  box-sizing: border-box;
+  /* 패딩 포함 너비 계산 */
+}
+
+.menu-search-input::placeholder {
+  color: #b0b0b0;
+}
+
+.menu-search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  opacity: 0.6;
+}
+
+.menu-search-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 섹션 공통 */
+.menu-section {
+  background-color: #ffffff;
+  border-top: 8px solid #f5f5f5;
+}
+
+.menu-section:first-of-type {
+  border-top: none;
+}
+
+.menu-section-header {
+  padding: 12px 16px 4px 16px;
+  font-size: 12px;
+  color: #9b9b9b;
+}
+
+.menu-list {
+  border-top: 1px solid #eaeaea;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 14px 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.menu-item:first-child {
+  border-top: none;
+}
+
+.menu-item-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-item-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.menu-item-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.menu-item-title {
+  font-size: 14px;
+  color: #222222;
+}
+
+.menu-item-subtitle {
+  font-size: 12px;
+  color: #9b9b9b;
+}
+
+.menu-item-arrow {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c0c0c0;
+  font-size: 16px;
+}
+
+/* 내 계정 섹션 */
+.menu-profile-row {
+  display: flex;
+  align-items: center;
+  padding: 14px 16px;
+}
+
+.menu-profile-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #e0e0e0;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.menu-profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu-profile-info {
+  flex: 1;
+}
+
+.menu-profile-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 2px 0;
+}
+
+.menu-profile-email {
+  font-size: 12px;
+  color: #9b9b9b;
+  margin: 0;
+}
+
+.menu-profile-arrow {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c0c0c0;
+  font-size: 16px;
+}
